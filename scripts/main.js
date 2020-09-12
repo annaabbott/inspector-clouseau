@@ -27,9 +27,30 @@ function windowPosition() {
     console.log('windowPosition');
 };
 
+function pageURL() {
+    let documentURL = document.querySelector("#documentURL");
+    let urlMessage = `The page URL is ${document.URL}.`;
+    documentURL.innerText = urlMessage;
+}
+
+function documentTitle() {
+    let pageTitle = document.querySelector("#documentTitle");
+    let titleMessage = `The page title is ${document.title}.`;
+    pageTitle.innerText = titleMessage;
+}
+
+function documentUpdate() {
+    let updateTime = document.querySelector("#updateTime");
+    let updateMessage = `The page was last updated on ${document.lastModified}.`;
+    updateTime.innerText = updateMessage;
+}
+
 //windowProperties();
 windowSize();
 windowPosition();
+pageURL();
+documentTitle();
+documentUpdate();
 
 window.onresize(windowSize);
 window.ondrag(windowPosition);
