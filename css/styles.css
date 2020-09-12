@@ -67,7 +67,8 @@ main p {
     }
 
     footer {
-        background-color: #949fa5;
+        background-color: #C2295A;
+        color: #C4C1BF;
         text-align: center;
         padding-top: .25rem;
         padding-bottom: .25rem;
